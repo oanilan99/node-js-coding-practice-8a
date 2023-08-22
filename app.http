@@ -1,0 +1,45 @@
+GET http://localhost:3000/todos/?status=TO%20DO
+
+
+###
+GET http://localhost:3000/todos/?priority=HIGH
+
+###
+GET http://localhost:3000/todos/?priority=LOW&status=DONE
+
+###
+GET http://localhost:3000/todos/2/
+
+###
+POST http://localhost:3000/todos/ 
+
+{
+"id": 10,
+"todo": "Finalize event theme",
+"priority": "LOW",
+"status": "TO DO"
+}
+
+###
+PUT http://localhost:3000/todos/2/ 
+
+{
+"status": "DONE"
+}
+
+###
+PUT http://localhost:3000/todos/1/ 
+
+{
+"priority": "HIGH"
+}
+
+###
+PUT http://localhost:3000/todos/1/ 
+
+{
+"todo": "Some task"
+}
+
+###
+PUT http://localhost:3000/todos/2/
